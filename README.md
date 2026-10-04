@@ -40,7 +40,7 @@ analysis, documentation, and refinement of the final submission.
 
 ### Project Requirements and Where They are Implemented
 
-| Requirement | Implementation (in `notebook.ipynb`) |
+| Requirement | Implementation (in `Team2_FinalProject.ipynb`) |
 | --- | --- |
 | Plans research steps for a stock | `Coordinator.plan_research` (Section 4) |
 | Uses tools dynamically | LLM selects Yahoo tools as JSON; code validates constraints and checks for required market tools before execution (Sections 3-5) |
@@ -84,7 +84,7 @@ source text.
 ## Setup
 
 1. Create an OpenRouter API key at <https://openrouter.ai/keys>.
-2. Open `notebook.ipynb` in Google Colab or Jupyter (Python 3.10+).
+2. Open `Team2_FinalProject.ipynb` in Google Colab or Jupyter (Python 3.10+).
 3. Run the cells from top to bottom. Paste your key at the hidden prompt. The
    key is never written to the notebook or to disk.
 
@@ -122,10 +122,7 @@ Three end-to-end runs (AAPL, MSFT, and NVDA) completed successfully. All three
 were routed by the LLM to both the market-data and news specialists and produced
 final research reports with supporting charts.
 
-The Evaluator changed two of the six specialist drafts. The AAPL news summary
-improved from a mean score of 4.00 to 5.00 after one revision. The MSFT market
-analysis also improved from 4.00 to 5.00 after one revision. The other four
-drafts were approved on their first review.
+The Evaluator changed two of the six specialist drafts. The MSFT market analysis improved from a mean score of 4.33 to 5.00 after one revision. The NVDA news summary improved from 3.00 to 5.00 after one revision. The other four drafts were approved on their first review.
 
 By the end of the demonstration, four general lessons had been stored in
 memory. Run 2 recalled one analysis lesson and one news lesson from Run 1, while
